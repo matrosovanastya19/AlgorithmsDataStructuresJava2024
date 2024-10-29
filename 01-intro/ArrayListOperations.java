@@ -47,7 +47,9 @@ public class ArrayListOperations {
 
         boolean isEmpty = colors.isEmpty();
         System.out.println("Is the list empty? " + isEmpty);
-
+        
+        colors.ensureCapacity(10);
+        System.out.println("Increased capacity of the list to hold at least 10 elements.");
         colors.add("Black");
         colors.add("White");
         System.out.println("List after adding elements to increase size: " + colors);
