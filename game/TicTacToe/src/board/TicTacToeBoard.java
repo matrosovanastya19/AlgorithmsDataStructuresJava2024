@@ -1,3 +1,4 @@
+package board;
 public class TicTacToeBoard implements Board {
     private char[][] board = new char[3][3];
 

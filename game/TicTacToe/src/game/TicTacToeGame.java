@@ -1,4 +1,10 @@
+package game;
 import java.util.Random;
+
+import board.Board;
+import display.Display;
+
+import player.Player;
 
 public class TicTacToeGame implements Game {
     private Board board;
@@ -12,7 +18,7 @@ public class TicTacToeGame implements Game {
         this.player1 = player1;
         this.player2 = player2;
         this.display = display;
-        setRandomStartingPlayer();  // Випадковий вибір початкового гравця
+        setRandomStartingPlayer();
     }
 
     @Override
